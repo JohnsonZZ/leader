@@ -1,0 +1,36 @@
+[ 2016-05-30T09:06:22+08:00 ] 127.0.0.1 /leader/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+ERR: 无法加载模块:Images
+
+[ 2016-05-30T09:07:00+08:00 ] 127.0.0.1 /leader/Public/images/prettyPhoto/default/sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+ERR: 无法加载模块:Public
+
+[ 2016-05-30T09:07:00+08:00 ] 127.0.0.1 /leader/Public/images/prettyPhoto/default/sprite_x.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+ERR: 无法加载模块:Public
+
+[ 2016-05-30T09:07:00+08:00 ] 127.0.0.1 /leader/Public/images/prettyPhoto/default/sprite_y.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Public
+
+[ 2016-05-30T09:07:00+08:00 ] 127.0.0.1 /leader/Public/images/prettyPhoto/default/loader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+ERR: 无法加载模块:Public
+
+[ 2016-05-30T09:07:00+08:00 ] 127.0.0.1 /leader/Public/images/view.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: 无法加载模块:Public
+

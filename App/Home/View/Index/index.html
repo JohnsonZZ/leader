@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<include file="Public/header" />
+<body>
+<include file="Public/nav" />
+
+<!--slider-->
+<section id="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="mainslider" class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="__PUBLIC__/images/banner1.jpg" width="1140px" alt="" />
+                            
+                        </li>
+                        <li>
+                            <img src="__PUBLIC__/images/banner2.jpg" width="1140px" alt="" />
+                            
+                        </li>
+                        <li>
+                            <img src="__PUBLIC__/images/banner4.jpg" width="1140px" alt="" />
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--container-->
+<section id="container">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="hero-unit">
+                <h4>欢迎来到立德 - 科技点缀世界</h4>
+                <p>肇庆市立德电子有限公司将立足肇庆、放眼世界的宏观理念，贯彻全球化的运筹布局，致力于专业分工以及资源整合，强化我们的核心技术与优势能力，最重要的是发挥团队合作精神，以追求立德公司永久经营与回馈社会的使命 </p>     
+				<a class="btn btn-welcome btn-large pull-right">了解更多</a>
+            </div>
+        </div>
+    </div>
+    <div class="row highlights">
+        <div class="col-md-3">
+            <div class="hl-circle">
+                <a class="hl-icon1" href="{:U('About/index#company')}">service</a>
+            </div>
+
+            <div class="highlights-content clearfix">
+                <h5>关于立德</h5>
+
+                <p>
+					三十年来立德秉持着『诚信』、『负责』、『精益求精』的座右铭，专业生产LED！
+                </p>
+
+                <a class="btn-small btn-hl" href="{:U('About/index#company')}">
+                    <span>更多</span>
+                </a><!-- button small end -->
+            </div>
+        </div>
+        <div class="col-md-3 ">
+            <div class="hl-circle">
+                <a class="hl-icon3" href="{:U('Goods/index')}">service</a>
+            </div>
+
+            <div class="highlights-content clearfix">
+                <h5>产品制作</h5>
+
+                <p>
+                     公司拥有国际最先进的波峰焊、回流焊、全自动贴片生产线、全自动插件机等一系列现代化生产设备。
+                </p>
+
+                <a class="btn-small btn-hl" href="{:U('Goods/index')}">
+                    <span>更多</span>
+                </a><!-- button small end -->
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="hl-circle">
+                <a class="hl-icon2" href="{:U('About/index#quality')}">service</a>
+            </div>
+
+            <div class="highlights-content clearfix">
+                <h5>品质保证</h5>
+
+                <p>
+				   ISO 14001 环境认证更新。<br />
+                   ISO 9001:2008品质认证更新。<br />
+                   ISO 16949:2009 品质认证更新。<br />
+                </p>
+
+                <a class="btn-small btn-hl" href="{:U('About/index#quality')}">
+                    <span>更多</span>
+                </a><!-- button small end -->
+            </div>
+        </div>
+        <div class="col-md-3 highlights">
+            <div class="hl-circle">
+                <a class="hl-icon4" href="{:U('Contact/index')}">service</a>
+            </div>
+
+            <div class="highlights-content clearfix">
+                <h5>联系我们</h5>
+
+                <p>
+                    肇庆市睦岗镇南亚路<br />
+                    TEL：(0758)2877017<br />
+					sales@ledtech.com.cn<br />
+                </p>
+
+                <a class="btn-small btn-hl" href="{:U('Contact/index')}">
+                    <span>更多</span>
+                </a><!-- button small end -->
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-md-12 our-works"><h4>产品展示</h4></div>
+        <div class="col-md-12">
+            <div id="our-projects" class="carousel bttop">
+                <div class="carousel-wrapper">
+                    <ul class="portfolio">
+						<foreach item="val" name="goods">	
+							<li>
+								<article>
+									<div class="inner-image">
+										<img src="__PUBLIC__/upload/image/{$val['href']}" height="220" alt="立德电子" />
+										<span class="frame-overlay"></span>
+									</div>
+									<div class="sliding">
+										<div class="inner-text">
+											<h4 class="title"><a href="./portfolio-single.html">{$val['brief']}</a></h4>
+										</div>
+									</div>
+								</article>
+							</li>
+						</foreach>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        
+</section>
+	<include file="Public/footer" />
+	<include file="Public/script" />
+	<script type="text/javascript">
+		$("#menu li:eq(0)").addClass("current").siblings().removeClass("current");
+        $(document).ready(function(){
+            $('#our-projects').elastislide({
+                imageW : 270,
+                border : 0,
+                minItems : 1,
+                margin : 30
+            });
+        });
+        $(document).ready(function(){
+            $('#testimonial').elastislide({
+                imageW  : 740,
+                margin  : 30
+            });
+        });
+               
+	</script>
+</body>
+</html>

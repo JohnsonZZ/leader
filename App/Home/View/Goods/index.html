@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<include file="Public/header" />
+<body>
+	<include file="Public/nav" />
+	<!--page header / breadcrumbs-->
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>产品展示 </h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--container-->
+<section id="container">
+    <div class="container">
+        <!--filter-->
+        <ul id="filtrable">
+            <li class="current all"><a href="#all">全部</a></li>
+            <li class="li1"><a href="#li1">高鹏灯</a></li>
+            <li class="li2"><a href="#li2">低功率鹏灯</a></li>
+            <li class="li3"><a href="#li3">射灯</a></li>
+            <li class="li4"><a href="#li4">泛光灯</a></li>
+			<li class="li5"><a href="#li5">路灯</a></li>
+            <li class="li6"><a href="#li6">面板灯</a></li>
+            <li class="li7"><a href="#li7">交流T8灯管</a></li>
+            <li class="li8"><a href="#li8">全塑T8交流灯管</a></li>
+            <li class="li9"><a href="#li9">陈列照明</a></li>
+        </ul>
+
+        <div class="clear"></div>
+
+        <section class="row portfolio filtrable clearfix">
+			<foreach item="val" name="goods" >
+				<article data-id="id-1" data-type="li{$val['sort']}" class="col-md-3">
+					<div class="inner-image">
+						<a href="javascript:void(0); " data-rel="prettyPhoto">
+							<img src="__PUBLIC__/upload/image/{$val['href']}"  class="img-responsive" alt="photo" />
+							<span class="frame-overlay"></span>
+						</a>
+					</div>
+					<div class="sliding">
+						<div class="inner-text">
+							<h4 class="title"><a href="javascript:void(0);">{$val['brief']}</a></h4>
+
+						</div>
+					</div>
+				</article>
+            </foreach>
+        </section>
+        <!--pagination-->
+		<div class="row" style="text-align:center">
+             <ul class="pagination pagination-sm no-margin center">
+				{$page}
+			</ul>
+		</div>
+    </div>
+</section>
+	<include file="Public/footer" />
+	<include file="Public/script" />
+	<script>
+		$("#menu li:eq(2)").addClass("current").siblings().removeClass("current");
+	</script>
+</body>
+</html>
